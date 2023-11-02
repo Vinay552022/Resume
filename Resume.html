@@ -3,23 +3,32 @@
   <head>
     <title>PDF Example by Object Tag</title>
     <style>
-        .internal {
-    width: 100%;
-    height: 100%;
-}
+      .internal {
+        width: 100%;
+        height: 100%;
+      }
 
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
- }
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p.top {
+        text-align: center;
+        font-size: 24px; 
+      }
     </style>
   </head>
   <body>
-    <object class="container internal" data="Vinay_Resume.pdf" type="application/pdf" >
-      <p>Unable to display PDF file. <a href="Vinay_Resume.pdf">Download</a> instead.</p>
+    <object class="container internal" data="Vinay_Resume." type="application/pdf">
+      <p class="top">Your browser doesn't support PDF files. <a href="Vinay_Resume.pdf">Please Download</a> instead.</p>
     </object>
   </body>
 </html>
+
